@@ -21,13 +21,13 @@ from rich.console import Console
 print("Welcome to the secret Auction program")
 
 dic = {}
+highest = 0
 while True:
     user = input("What's your name?: ")
     bid = int(input("What's your Bid?: $"))
     
     dic[user] = bid
     
-    highest = 0
     if (bid >=  highest):
         highest = bid
         name = user
